@@ -97,7 +97,14 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         icono9 = new ImageIcon(imagen9.getImage().getScaledInstance(lblImagen.getWidth(), lblImagen.getHeight(), Image.SCALE_DEFAULT));
     }
     
-    
+    private void iniciarCajaTexto(){
+        
+        txtPalabra.setText("");
+        for(int i = 0; i < palabra.length(); i++){
+            txtPalabra.setText(txtPalabra.getText() + "   _");
+        }
+        
+    }
 
     private void escogerPalabra(){
         
