@@ -14,8 +14,14 @@ import javax.swing.JButton;
 import javax.swing.JOptionPane;
 
 /**
+ * VentanaPrincipal.
  *
- * @author Karen
+ * Clase con interfaz gráfica.
+ *
+ * @version 1.2
+ * @since 2019
+ * @author Eduardo Ayora
+ * @see http://ups.edu.ec
  */
 public class VentanaPrincipal extends javax.swing.JFrame {
 
@@ -33,7 +39,8 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private JButton[] botones;
     
     /**
-     * Creates new form VentanaPrincipal
+     * VentanaPrincipal
+     * Constructor de la clase, se da valores a los atributos
      */
     public VentanaPrincipal() {
         initComponents();
@@ -50,6 +57,10 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         cambiarImagen();
     }
     
+    /**
+     * agregarBotones
+     * agrega los botones en el vector
+     */
     private void agregarBotones(){
         botones[0] = jButton1;
         botones[1] = jButton2;
@@ -80,6 +91,10 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         botones[26] = jButton27;
     }
     
+    /**
+     * generarImagenes
+     * metodo para asignar a los iconos las imagenes correspondientes.
+     */
     private void generarImagenes(){
         
         ImageIcon imagen3 = new ImageIcon(getClass().getResource("/ec/edu/ups/imagenes/3.png"));
@@ -98,6 +113,10 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         icono9 = new ImageIcon(imagen9.getImage().getScaledInstance(lblImagen.getWidth(), lblImagen.getHeight(), Image.SCALE_DEFAULT));
     }
     
+    /**
+     * iniciarCajaTexto
+     * inicia la caja de texto con guiones bajos dependiendo de la cantidad de letras
+     */
     private void iniciarCajaTexto(){
         
         txtPalabra.setText("");
@@ -107,6 +126,10 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         
     }
 
+    /**
+     * escogerPalabra
+     * escoge una palabra del Map al azar
+     */
     private void escogerPalabra(){
         
         Map<String, String> palabras = new HashMap<>();
@@ -127,6 +150,10 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         
     }
     
+    /**
+     * darPista
+     * escoge una letra aleatoria, y muestra su o sus ubicaciones en la palabra
+     */
     private void darPista(){
         
         int numAleatorio = (int)(Math.random()*palabra.length());
@@ -141,6 +168,10 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         
     }
     
+    /**
+     * cambiarImagen
+     * cambia la imagen cuando el usuario se equivoca
+     */
     private void cambiarImagen(){
         
         switch(numErrores){
@@ -169,6 +200,10 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         
     }
 
+    /**
+     * reemplazarLetra
+     * metodo que ayuda para encontrar la letra seleccionada por el usuario
+     */
     private String reemplazarLetra(String texto, int indiceLetraReemplazada, char nuevaLetra){
         //Modificamos el índice dependiendo de lo que necesiitamos. Sino solo omitimos.
         indiceLetraReemplazada = 3 + indiceLetraReemplazada * 4;
@@ -177,6 +212,10 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         
     }
     
+    /**
+     * mostrarPalabra
+     * una vez que el usuario pierde, se muestra la palabra en la caja de texto
+     */
     private void mostrarPalabra(){
         for(int i = 0; i < palabra.length(); i++){
             String temp = txtPalabra.getText();
@@ -185,6 +224,10 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         }
     }
     
+    /**
+     * verificarLetra
+     * Verifica si la letra está o no en la palabra
+     */
     private void verificarLetra(){
         
         boolean letraEncontrada = false;
@@ -215,6 +258,10 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         }
     }
     
+    /**
+     * desabilitarBotones
+     * Desabilita botones cuando el usuario pierde o gana
+     */
     private void desabilitarBotones(){
         jButton1.setEnabled(false);
         jButton2.setEnabled(false);
@@ -838,6 +885,11 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jButton27.setEnabled(false);
     }//GEN-LAST:event_jButton27ActionPerformed
 
+    /**
+     * btnReiniciarActionPerformed
+     * Evento de accion que reinicia el juego
+     * @param evt evento de accion
+     */
     private void btnReiniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReiniciarActionPerformed
         // TODO add your handling code here:
         numErrores = 0;
