@@ -42,8 +42,60 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         escogerPalabra();
         numErrores = 0;
         numAciertos = 0;
+        iniciarCajaTexto();
+        botones = new JButton[27];
+        agregarBotones();
+        generarImagenes();
+        cambiarImagen();
     }
     
+    private void agregarBotones(){
+        botones[0] = jButton1;
+        botones[1] = jButton2;
+        botones[2] = jButton3;
+        botones[3] = jButton4;
+        botones[4] = jButton5;
+        botones[5] = jButton6;
+        botones[6] = jButton7;
+        botones[7] = jButton8;
+        botones[8] = jButton9;
+        botones[9] = jButton10;
+        botones[10] = jButton11;
+        botones[11] = jButton12;
+        botones[12] = jButton13;
+        botones[13] = jButton14;
+        botones[14] = jButton15;
+        botones[15] = jButton16;
+        botones[16] = jButton17;
+        botones[17] = jButton18;
+        botones[18] = jButton19;
+        botones[19] = jButton20;
+        botones[20] = jButton21;
+        botones[21] = jButton22;
+        botones[22] = jButton23;
+        botones[23] = jButton24;
+        botones[24] = jButton25;
+        botones[25] = jButton26;
+        botones[26] = jButton27;
+    }
+    
+    private void generarImagenes(){
+        
+        ImageIcon imagen3 = new ImageIcon(getClass().getResource("/ec/edu/ups/imagenes/3.png"));
+        ImageIcon imagen4 = new ImageIcon(getClass().getResource("/ec/edu/ups/imagenes/4.png"));
+        ImageIcon imagen5 = new ImageIcon(getClass().getResource("/ec/edu/ups/imagenes/5.png"));
+        ImageIcon imagen6 = new ImageIcon(getClass().getResource("/ec/edu/ups/imagenes/6.png"));
+        ImageIcon imagen7 = new ImageIcon(getClass().getResource("/ec/edu/ups/imagenes/7.png"));
+        ImageIcon imagen8 = new ImageIcon(getClass().getResource("/ec/edu/ups/imagenes/8.png"));
+        ImageIcon imagen9 = new ImageIcon(getClass().getResource("/ec/edu/ups/imagenes/9.png"));
+        icono3 = new ImageIcon(imagen3.getImage().getScaledInstance(lblImagen.getWidth(), lblImagen.getHeight(), Image.SCALE_DEFAULT));
+        icono4 = new ImageIcon(imagen4.getImage().getScaledInstance(lblImagen.getWidth(), lblImagen.getHeight(), Image.SCALE_DEFAULT));
+        icono5 = new ImageIcon(imagen5.getImage().getScaledInstance(lblImagen.getWidth(), lblImagen.getHeight(), Image.SCALE_DEFAULT));
+        icono6 = new ImageIcon(imagen6.getImage().getScaledInstance(lblImagen.getWidth(), lblImagen.getHeight(), Image.SCALE_DEFAULT));
+        icono7 = new ImageIcon(imagen7.getImage().getScaledInstance(lblImagen.getWidth(), lblImagen.getHeight(), Image.SCALE_DEFAULT));
+        icono8 = new ImageIcon(imagen8.getImage().getScaledInstance(lblImagen.getWidth(), lblImagen.getHeight(), Image.SCALE_DEFAULT));
+        icono9 = new ImageIcon(imagen9.getImage().getScaledInstance(lblImagen.getWidth(), lblImagen.getHeight(), Image.SCALE_DEFAULT));
+    }
     
     
 
