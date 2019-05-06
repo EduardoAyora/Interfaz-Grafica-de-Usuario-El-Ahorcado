@@ -127,7 +127,19 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         
     }
     
-    
+    private void darPista(){
+        
+        int numAleatorio = (int)(Math.random()*palabra.length());
+        letra = palabra.charAt(numAleatorio);
+        verificarLetra();
+        
+        for(int i = 0; i < botones.length; i++){
+            if(botones[i].getText().charAt(0) == letra){
+                botones[i].setEnabled(false);
+            }
+        }
+        
+    }
     
     private void cambiarImagen(){
         
