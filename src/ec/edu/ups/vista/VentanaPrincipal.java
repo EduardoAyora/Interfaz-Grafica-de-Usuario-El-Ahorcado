@@ -622,138 +622,192 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        
+        letra = jButton1.getText().charAt(0);
+        verificarLetra();
+        jButton1.setEnabled(false);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        
+        letra = jButton2.getText().charAt(0);
+        verificarLetra();
+        jButton2.setEnabled(false);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        
+        letra = jButton3.getText().charAt(0);
+        verificarLetra();
+        jButton3.setEnabled(false);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
-        
+        letra = jButton4.getText().charAt(0);
+        verificarLetra();
+        jButton4.setEnabled(false);
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
-        
+        letra = jButton5.getText().charAt(0);
+        verificarLetra();
+        jButton5.setEnabled(false);
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
-        
+        letra = jButton6.getText().charAt(0);
+        verificarLetra();
+        jButton6.setEnabled(false);
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
-        
+        letra = jButton7.getText().charAt(0);
+        verificarLetra();
+        jButton7.setEnabled(false);
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         // TODO add your handling code here:
-        
+        letra = jButton8.getText().charAt(0);
+        verificarLetra();
+        jButton8.setEnabled(false);
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         // TODO add your handling code here:
-        
+        letra = jButton9.getText().charAt(0);
+        verificarLetra();
+        jButton9.setEnabled(false);
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
         // TODO add your handling code here:
-        
+        letra = jButton10.getText().charAt(0);
+        verificarLetra();
+        jButton10.setEnabled(false);
     }//GEN-LAST:event_jButton10ActionPerformed
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
         // TODO add your handling code here:
-        
+        letra = jButton11.getText().charAt(0);
+        verificarLetra();
+        jButton11.setEnabled(false);
         
     }//GEN-LAST:event_jButton11ActionPerformed
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
         // TODO add your handling code here:
-        
+        letra = jButton12.getText().charAt(0);
+        verificarLetra();
+        jButton12.setEnabled(false);
     }//GEN-LAST:event_jButton12ActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
         // TODO add your handling code here:
-        
+        letra = jButton13.getText().charAt(0);
+        verificarLetra();
+        jButton13.setEnabled(false);
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
         // TODO add your handling code here:
-        
+        letra = jButton14.getText().charAt(0);
+        verificarLetra();
+        jButton14.setEnabled(false);
     }//GEN-LAST:event_jButton14ActionPerformed
 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
         // TODO add your handling code here:
-        
+        letra = jButton15.getText().charAt(0);
+        verificarLetra();
+        jButton15.setEnabled(false);
     }//GEN-LAST:event_jButton15ActionPerformed
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
         // TODO add your handling code here:
-        
+        letra = jButton16.getText().charAt(0);
+        verificarLetra();
+        jButton16.setEnabled(false);
     }//GEN-LAST:event_jButton16ActionPerformed
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
         // TODO add your handling code here:
-        
+        letra = jButton17.getText().charAt(0);
+        verificarLetra();
+        jButton17.setEnabled(false);
     }//GEN-LAST:event_jButton17ActionPerformed
 
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
         // TODO add your handling code here:
-        
+        letra = jButton18.getText().charAt(0);
+        verificarLetra();
+        jButton18.setEnabled(false);
     }//GEN-LAST:event_jButton18ActionPerformed
 
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
         // TODO add your handling code here:
-        
+        letra = jButton19.getText().charAt(0);
+        verificarLetra();
+        jButton19.setEnabled(false);
     }//GEN-LAST:event_jButton19ActionPerformed
 
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
         // TODO add your handling code here:
-        
+        letra = jButton20.getText().charAt(0);
+        verificarLetra();
+        jButton20.setEnabled(false);
     }//GEN-LAST:event_jButton20ActionPerformed
 
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
         // TODO add your handling code here:
-        
+        letra = jButton21.getText().charAt(0);
+        verificarLetra();
+        jButton21.setEnabled(false);
     }//GEN-LAST:event_jButton21ActionPerformed
 
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
         // TODO add your handling code here:
-        
+        letra = jButton22.getText().charAt(0);
+        verificarLetra();
+        jButton22.setEnabled(false);
     }//GEN-LAST:event_jButton22ActionPerformed
 
     private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
         // TODO add your handling code here:
-        
+        letra = jButton23.getText().charAt(0);
+        verificarLetra();
+        jButton23.setEnabled(false);
     }//GEN-LAST:event_jButton23ActionPerformed
 
     private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
         // TODO add your handling code here:
-        
+        letra = jButton24.getText().charAt(0);
+        verificarLetra();
+        jButton24.setEnabled(false);
     }//GEN-LAST:event_jButton24ActionPerformed
 
     private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
         // TODO add your handling code here:
-        
+        letra = jButton25.getText().charAt(0);
+        verificarLetra();
+        jButton25.setEnabled(false);
     }//GEN-LAST:event_jButton25ActionPerformed
 
     private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
         // TODO add your handling code here:
-        
+        letra = jButton26.getText().charAt(0);
+        verificarLetra();
+        jButton26.setEnabled(false);
     }//GEN-LAST:event_jButton26ActionPerformed
 
     private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
         // TODO add your handling code here:
-        
+        letra = jButton27.getText().charAt(0);
+        verificarLetra();
+        jButton27.setEnabled(false);
     }//GEN-LAST:event_jButton27ActionPerformed
 
     private void btnReiniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReiniciarActionPerformed
