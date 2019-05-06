@@ -19,11 +19,32 @@ import javax.swing.JOptionPane;
  */
 public class VentanaPrincipal extends javax.swing.JFrame {
 
-    
+    private String palabra;
+    private char letra;
+    private int numErrores;
+    private int numAciertos;
+    private Icon icono3;
+    private Icon icono4;
+    private Icon icono5;
+    private Icon icono6;
+    private Icon icono7;
+    private Icon icono8;
+    private Icon icono9;
+    private JButton[] botones;
     
     /**
      * Creates new form VentanaPrincipal
      */
+    public VentanaPrincipal() {
+        initComponents();
+        this.setLocationRelativeTo(null);
+        this.setResizable(false);
+        escogerPalabra();
+        numErrores = 0;
+        numAciertos = 0;
+    }
+    
+    
     
     
     /**
