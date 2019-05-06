@@ -46,6 +46,27 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     
     
     
+
+    private void escogerPalabra(){
+        
+        Map<String, String> palabras = new HashMap<>();
+        palabras.put("Animal", "SALTAMONTES");
+        palabras.put("Ciudad", "GUAYAQUIL");
+        palabras.put("País de Sudamerica", "URUGUAY");
+        palabras.put("Fruta", "MELON");
+        palabras.put("Herramienta", "TALADRO");
+        palabras.put("Marca de bebida", "PEPSI");
+        palabras.put("Marca de auto", "MITSUBISHI");
+        palabras.put("Marca de celular", "HUAWEI");
+        palabras.put("País de Europa", "ALEMANIA");
+        palabras.put("Objeto", "MOCHILA");
+        String[] claves = {"Animal", "Ciudad", "País de Sudamerica", "Fruta", "Herramienta", "Marca de bebida", "Marca de auto", "Marca de celular", "País de Europa", "Objeto"}; 
+        String clave = claves[(int)(Math.random()*claves.length)];
+        palabra = palabras.get(clave);
+        lblPista.setText("Pista : " + clave);
+        
+    }
+    
     
     /**
      * This method is called from within the constructor to initialize the form.
