@@ -45,6 +45,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         iniciarCajaTexto();
         botones = new JButton[27];
         agregarBotones();
+        darPista();
         generarImagenes();
         cambiarImagen();
     }
@@ -125,6 +126,54 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         lblPista.setText("Pista : " + clave);
         
     }
+    
+    
+    
+    private void cambiarImagen(){
+        
+        switch(numErrores){
+            case 6:
+                lblImagen.setIcon(icono9);
+                break;
+            case 5:
+                lblImagen.setIcon(icono8);
+                break;
+            case 4:
+                lblImagen.setIcon(icono7);
+                break;
+            case 3:
+                lblImagen.setIcon(icono6);
+                break;
+            case 2:
+                lblImagen.setIcon(icono5);
+                break;
+            case 1:
+                lblImagen.setIcon(icono4);
+                break;
+            case 0:
+                lblImagen.setIcon(icono3);
+                break;
+        }
+        
+    }
+
+    private String reemplazarLetra(String texto, int indiceLetraReemplazada, char nuevaLetra){
+        //Modificamos el índice dependiendo de lo que necesiitamos. Sino solo omitimos.
+        indiceLetraReemplazada = 3 + indiceLetraReemplazada * 4;
+        texto = texto.substring(0, indiceLetraReemplazada) + Character.toString(nuevaLetra) + texto.substring(indiceLetraReemplazada + 1);
+        return texto;
+        
+    }
+    
+    private void mostrarPalabra(){
+        for(int i = 0; i < palabra.length(); i++){
+            String temp = txtPalabra.getText();
+            temp = reemplazarLetra(temp, i, palabra.charAt(i));
+            txtPalabra.setText(temp);
+        }
+    }
+    
+    
     
     
     /**
