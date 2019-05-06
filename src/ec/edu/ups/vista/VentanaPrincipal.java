@@ -173,7 +173,35 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         }
     }
     
-    
+    private void verificarLetra(){
+        
+        boolean letraEncontrada = false;
+        
+        for(int i = 0; i < palabra.length(); i++){
+            if(letra == palabra.charAt(i)){
+                letraEncontrada = true;
+                String temp = txtPalabra.getText();
+                temp = reemplazarLetra(temp, i, letra);
+                txtPalabra.setText(temp);
+                numAciertos++;
+            }
+        }
+        if(letraEncontrada == false){
+            numErrores++;
+            cambiarImagen();
+        }
+        
+        if(numErrores == 6){
+            desabilitarBotones();
+            mostrarPalabra();
+            JOptionPane.showMessageDialog(null, "¡Ahorcado!");
+        }
+        
+        if(numAciertos == palabra.length()){
+            desabilitarBotones();
+            JOptionPane.showMessageDialog(null, "¡Ganaste!");
+        }
+    }
     
     
     /**
